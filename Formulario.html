@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Proyecto final</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="archivos fuente/estilo.css">
+    </head>
+    <body >
+        <header> <div class="logo"><img src=""><h2>Plotter_style</h2></div>
+        <nav>
+            <a href="" class="nav-link">servicios</a>
+            <a href="" class="nav-link">productos</a>
+            <a href="" class="nav-link">contactanos</a>
+            <a href="" class="nav-link">Quienes somos</a>
+        </nav> </header>
+        <div class="container">
+            <div class="formulario">
+                <form class="row g-3" name='formulario' id='formId' method='POST'>
+                <div class="col-6">
+                   <label for="">Nombre:</label>  
+                   <input type='text' name='nombre' maxlength="7" id='nombre'onkeypress="return soloLetras(event)" ></input><br>
+                   <div class="col-6">
+                     <label for="">vehiculo: </label> <input type='text' name='vehiculo'maxlength="7" id='apellido' onkeypress=" return soloLetras(event)"></input><br>
+                   </div>
+                   <div class="col-6">
+                  tipo vinilo:    <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                  <div class="col-6">
+                    <label for="validationServer05" class="form-label">color</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                    <div id="validationServer05Feedback" class="invalid-feedback">
+                    </div>    
+                 <div class="col-6">
+                    <label for="">Telefono: </label> 
+                    <input type='number' name='telefono' maxlength="10" id='telefono' onkeypress=" return soloNumeros(event)" oninput="maxLengthNumber(this)"></input><br>
+                    <label for="">mail: </label>  
+                    <input type='email' name='email' id='email'></input><br>
+                 </div>   
+                 <div class="col-12">
+                    <label for="">tipo de ploteo: </label> 
+                 </div>
+                    <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck3">completo.</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck3">por partes</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck3">puertas</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck3">techo</label>
+                      </div>
+                    
+                    
+                    
+                 
+                    
+                        <input 	
+                            type='submit' 
+                            name='registrar' 
+                            id='validar' 
+                            onClick='return validarForm()' 
+                            value='validar'></input>
+                    </form>
+            
+                
+                
+            
+               </div>
+       
+
+        </div>
+        <script type='text/javascript'  src="./archivos fuente/Formulario.js">
+        </script> 
+        <footer>  <i class="fa-brands fa-square-twitter"></i>    <span class="redes"> Instagram</span>   <br> <p id="unico"> ¡Hola Mundo! </p>       
+        
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer"> Modelo de cajas</a>
+        </footer>
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html
